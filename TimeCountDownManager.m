@@ -52,7 +52,7 @@
         return 0;
     }
     
-    TimeModel *time = [exists safeObjectWithIndex:0];
+    TimeModel *time = [exists objectAtIndex:0];
     
     NSTimeInterval t = [time.finishDate timeIntervalSinceNow];
     
