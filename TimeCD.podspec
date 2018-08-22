@@ -1,31 +1,42 @@
+#
+# Be sure to run `pod lib lint TimeCD.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
+
 Pod::Spec.new do |s|
+  s.name             = 'TimeCD'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of TimeCD.'
 
-  s.license = "Copyright (c) 2018年 zz. All rights reserved."
-  s.name         = "TimeCD"
-  s.version      = "0.0.2"
-  s.summary      = "A short description of buttonCountdown."
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
 
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
 
-  s.description  = <<-DESC
-                    pod 库 - 测试
-                   DESC
+  s.homepage         = 'https://github.com/HitlerHunter/TimeCD'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'HitlerHunter' => '15581580575@163.com' }
+  s.source           = { :git => 'https://github.com/HitlerHunter/TimeCD.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.homepage     = "https://github.com/HitlerHunter/buttonCountdown.git"
+  s.ios.deployment_target = '8.0'
 
-  s.license      = "MIT"
+  s.source_files = 'TimeCD/Classes/**/*'
+  
+  # s.resource_bundles = {
+  #   'TimeCD' => ['TimeCD/Assets/*.png']
+  # }
 
-  s.author             = { "ZZ" => "15581580575@163.com" }
-
-
-  s.platform     = :ios, "8.0"
-
- 
-  s.source       = { :git => "https://github.com/HitlerHunter/buttonCountdown.git", :tag => "#{s.version}" }
-
-
-
-  s.source_files  = "*.{h,m}"
-
-
-
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
